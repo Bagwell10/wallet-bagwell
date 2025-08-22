@@ -1,0 +1,1 @@
+hook.Add("PlayerSay","WalletMenuOpen", function(ply,text) local text = string.lower(text) if string.find(text,"/wallet",1) then umsg.Start( "WalletMenu", ply ) umsg.End() return "" end end) if LC_Wallet.GiveOnSpawn then function LCWalletLoadout( ply ) ply:Give( "portefeuille" ) end hook.Add( "PlayerLoadout", "LCWalletLoadoutFunction", LCWalletLoadout ) else return false end

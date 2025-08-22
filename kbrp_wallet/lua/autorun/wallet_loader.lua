@@ -1,0 +1,1 @@
+if SERVER then include("server/sv_wallet.lua") AddCSLuaFile("server/sv_wallet.lua") end if CLIENT then include("client/cl_wallet.lua") end
